@@ -1,10 +1,86 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;1,300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap");
 
 :root {
-  --font-normal: "Shantell Sans";
-  --font-destaque: "Source Code Pro";
+  --font01: verdana, Geneva, Tahoma, sans-serif;
+  --font02: "Passion One", cursive;
+}
+
+html,
+body {
+  background-color: darkgray;
+  min-height: 100vh;
+  font-family: var(--font02);
+}
+header {
+  background-color: rgba(231, 93, 43, 0.973);
+  color: white;
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 8vw;
+  font-weight: bolder;
+  font-variant: small-caps;
+  padding-top: 50px;
+  font-family: var(--font01);
+}
+
+header > p {
+  font-family: var(--font01);
+  font-size: 4vw;
+  padding-bottom: 50px;
+  padding-top: 3px;
+}
+
+section {
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+  padding-left: 30px;
+  line-height: 2em;
+  font-size: 3.5vw;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+section.imagem {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+  background-attachment: fixed;
+}
+
+section.imagem {
+  color: white;
+}
+section.imagem > p {
+  background-color: rgba(0, 0, 0, 0.541);
+  display: inline-block;
+  padding: 5px;
+  text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+  background-image: url("../imagens/img01.jpg");
+  background-size: cover;
+  background-position: left center;
+}
+section#img02 {
+  background-image: url("../imagens/img02.jpg");
+  background-position: right center;
+}
+footer {
+  background-color: orangered;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-family: var(--font01);
 }
